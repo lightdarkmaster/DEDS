@@ -52,15 +52,15 @@ def decrypt_ui():
 # GUI Setup
 app = tk.Tk()
 app.title("File Encryptor & Decryptor")
-app.geometry("400x200")
+app.geometry("500x300")  # Bigger window
 
-title = tk.Label(app, text="Encrypt or Decrypt Files", font=("Arial", 16))
-title.pack(pady=10)
+title = tk.Label(app, text="DEDS", font=("Arial", 20, "bold"))
+title.pack(pady=20)
 
-encrypt_btn = tk.Button(app, text="Encrypt File", command=encrypt_ui, width=30)
+encrypt_btn = tk.Button(app, text="🔒 Encrypt File", command=encrypt_ui, width=35, height=2, font=("Arial", 14))
 encrypt_btn.pack(pady=10)
 
-decrypt_btn = tk.Button(app, text="Decrypt File", command=decrypt_ui, width=30)
+decrypt_btn = tk.Button(app, text="🔓 Decrypt File", command=decrypt_ui, width=35, height=2, font=("Arial", 14))
 decrypt_btn.pack(pady=10)
 
 app.mainloop()
