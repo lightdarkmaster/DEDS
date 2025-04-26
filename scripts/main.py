@@ -49,7 +49,7 @@ def decrypt_ui():
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
-# GUI Setup
+# User Interface
 app = tk.Tk()
 app.title("File Encryptor & Decryptor")
 app.geometry("500x300")  # Bigger window
