@@ -31,20 +31,20 @@ class TestDecryptFile(unittest.TestCase):
 class TestFiledialog(unittest.TestCase):
     def test_filedialog_askopenfilename(self):
         # Test that the function returns a file path
-        root = tk.Tk()
+        root = tk.Tk();
         file_path = filedialog.askopenfilename()
         self.assertIsNotNone(file_path)
 
     def test_filedialog_askopenfilename_cancel(self):
         # Test that the function returns None when cancelled
-        root = tk.Tk()
+        root = tk.Tk();
         file_path = filedialog.askopenfilename()
         self.assertIsNone(file_path)
 
 class TestMessagebox(unittest.TestCase):
     def test_messagebox_showinfo(self):
         # Test that the function shows a message box
-        root = tk.Tk()
+        root = tk.Tk();
         messagebox.showinfo('Test', 'This is a test message')
 
     def test_messagebox_showerror(self):
@@ -63,4 +63,4 @@ class TestOs(unittest.TestCase):
             os.path.exists(123)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main();
