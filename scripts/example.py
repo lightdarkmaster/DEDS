@@ -17,5 +17,5 @@ def addOne(array):
 addOne([87,98,85,88,81,83,82]);
 # print("Averge Grade: ");  
 # computeAverage([87,98,85,88,81,83,82]);
-
+# average calculation
 computeTotalScore([87,98,85,88,81,83,82]);
